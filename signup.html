@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <section>
+
+        <div class="signup-box">
+            <h2>Get Started! Register Yourself</h2>
+            <div class="sb88">
+                <form id="hospitalForm">
+
+                <h3>1. Basic Identity and Location</h3>
+                <div class="sb1">
+                    <div class="sb2">
+                        <label>Hospital Name</label>
+                        <input type="text" id="hospitalName" required placeholder="Hospital's Name">
+                    </div>
+                    <div class="sb2">
+                        <label>Hospital Type</label>
+                        <input type="text" required placeholder="eg. clinic,government,private,etc ">
+                    </div>
+                </div>
+                <div class="sb3">
+                    <label>Full Address of Hospital</label>
+                    <input type="text" required placeholder="Enter Your full Address">
+                </div>
+                <div class="sb4">
+                    <label>Primary contact information </label>
+                    <input type="text" id="email" required placeholder="Official landline and emergency desk number.">
+                </div>
+
+                <h3 id="sb-h3">2. Legal & Verification</h3>
+                <div class="sb5">
+                    <label> Medical License Number / Registration ID</label>
+                    <input type="text" id="password" placeholder="Issued by the local health authority. " required>
+                </div>
+                <div class="sb6">
+                    <label>Upload Documents </label>
+                    <input type="text" required placeholder="Upload your licsence to verify">
+                </div>
+
+                <h3 style="margin-top: 7%;">3. Capacity & Infrastructure</h3>
+                <div class="sb7">
+                    <label> Total Bed Capacity</label>
+                    <input type="text" required placeholder="General wards, ICU, CCU, and NICU counts. (In given order)">
+                </div>
+                <div class="sb8">
+                    <label> Specialties Offered</label>
+                    <input type="text" required placeholder="(Cardiology, Neurology, Pediatrics, etc.).">
+                </div>
+                <div class="sb9">
+                    <label> Diagnostic Facilities</label>
+                    <input type="text" required placeholder="e.g., X-Ray, MRI, CT-Scan, Pathology Lab">
+                </div>
+                <div class="sb10">
+                    <label> Ambulance Services </label>
+                    <input type="text" required placeholder="yes/No">
+                </div>
+
+
+
+                <div class="terms-condition">
+                    <label> <input type="checkbox" required>I accept the <a
+                            href="http://127.0.0.1:3000/terms%20and%20condition/t&c.html">Terms of Service</a> and
+                        privacy
+                        policy
+                    </label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="signin-link">
+                    <p>Already registered? <a href="http://127.0.0.1:3000/login%20page/login.html#">Sign in</a></p>
+                </div>
+                
+            </form>
+
+
+        </div>
+
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+
+document.getElementById("hospitalForm").addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const hospitalName =
+        document.getElementById("hospitalName").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const password =
+        document.getElementById("password").value;
+
+    try {
+
+        const response = await fetch(
+            "http://localhost:5000/api/hospitals/register",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    hospitalName,
+                    email,
+                    password
+                })
+            }
+        );
+
+        const data = await response.json();
+
+        alert(data.message);
+
+    } catch (error) {
+
+        alert("Error connecting backend");
+
+    }
+
+});
+
+</script>
+</body>
+
+</html>

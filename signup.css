@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , 'sans-serif';
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signup-box{
+    position:fixed;
+    background:#fff;
+    border: 2px solid rgba(255, 255, 255,.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0,0, 0.37);
+    width: 65vw;
+    height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+    letter-spacing: 0.3px;
+}
+h3{
+    font-weight: 400;font-size: 0.9em;margin-top: 2%;margin-left: 5%;margin-bottom: 2%;
+}   
+.sb1{
+    display: flex;flex-direction: row;align-items: center;justify-content: space-around;
+}
+.sb2 label{
+    position: absolute;font-size: 0.9em;margin-left: 1.1%;margin-top: 1.5%;
+}
+.sb2 input{
+    border: 1px solid grey;padding: 1.3% 3.5%;width: 20vw;margin-top: 14%;border-radius: 18px;font-size: 0.8em;
+}
+.sb3 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2.5%;
+}
+.sb3 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5.5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb4 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2.5%;
+}
+.sb4 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5.5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+#sb-h3{
+    margin-top: 7%;
+}
+.sb5 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;letter-spacing: -0.5px;margin-top: 1.5%;
+}
+.sb5 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 4.7%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb6 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2.5%;
+}
+.sb6 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5.5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb7 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 1%;
+}
+.sb7 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 4%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb8 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2%;
+}
+.sb8 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb9 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2%;
+}
+.sb9 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.sb10 label{
+    position: absolute;font-size: 0.9em;margin-left: 10.5%;margin-top: 2%;
+}
+.sb10 input{
+    border: 1px solid grey;padding: 0.5% 1.5%;width: 52.5vw;margin-top: 5%;border-radius: 18px;margin-left: 9.5%;font-size: 0.8em;
+}
+.terms-condition{
+    font-size: 0.75em;
+    text-align: center;
+    color: #000;
+    margin-top: 3.5%;
+    
+}
+.terms-condition label input{
+    margin-right: 5px;
+}
+.terms-condition a {
+    text-decoration: none;
+}
+.terms-condition a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 52.5vw;
+    height: 40px;
+    background: #24a0edc6;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #000;
+    font-weight: 500;
+    margin: 5% 9.5%;
+}
+button:hover{
+    background: #24a0ed;
+}
+.signin-link{
+    font-size: .85em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 3.5%;
+}
+.signin-link p a{
+    text-decoration: none;
+}
+.signin-link p a:hover{
+    text-decoration: underline;
+}

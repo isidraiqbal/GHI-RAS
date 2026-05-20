@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHI&RAS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .pgmcpopup {
+            scroll-behavior: smooth;
+        }
+
+        .mchpopup {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <p>Government Hospital Information & <br> Resources Availability Systems</p>
+        </div>
+        <div class="box3">
+            <i class="fa-regular fa-clock"></i>
+            <p>24/7 Emergency Service</p>
+        </div>
+    </div>
+
+    <div class="emergency-box">
+        <div class="box4">
+            <div class="box5">
+                <h2>Emergency Services</h2>
+                <p>Find the nearest hospital and get a bed.</p>
+
+                <button id="open-popup">Request for Ambulance</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="headline2" style="margin-top: 3%; margin-left: 3%;">
+        <p style="font-size: 1.7vw; font-family: 'poppins'; font-weight: 600; width: 100%;">Get the Information of
+            Hospitals and Doctors here !!</p>
+    </div>
+
+    <div class="box7" style="width: 100%;">
+        <div class="hosp"
+            style="width: 96vw; height: 47vh; background-color: #e8e9eb; border-radius: 12px; margin-top: 2vh;">
+            <div class="sigmaboi">
+                <div class="cont1">
+                    <img src="bag2.jpg" alt="patnahospimg" id="open-pgmcpopup">
+                    <p>Patna Govt Medical College</p>
+                </div>
+                <div class="cont1">
+                    <img src="bag2.jpg" alt="patnahospimg" id="open-mchpopup">
+                    <p>Muzaffarpur Civil Hospital</p>
+                </div>
+                <div class="cont1">
+                    <img src="bag2.jpg" alt="patnahospimg">
+                    <p>AIIMS Delhi (Govt)</p>
+                </div>
+                <div class="cont1">
+                    <img src="bag2.jpg" alt="patnahospimg">
+                    <p>Surat Govt Hospital</p>
+                </div>
+            </div>
+
+            <div class="cont1-loadmore-btn">
+                <button>VIEW MORE <i class="fa-solid fa-chevron-down"></i> </button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="popup">
+        <button class="close-btn">&times;</button>
+        <h2>Ambulance Request</h2>
+        <div class="popup1">
+            <div class="popupbox">
+                <label for="state">Choose Your State</label>
+                <select name="state" id="state">
+                    <option value="Bihar">Bihar</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="chhastisgarh">chhastisgarh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+            </div>
+            <div class="popupbox">
+                <label for="district">Choose your district</label>
+                <select name="district" id="district">
+                    <option value="Bihar">Bihar</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="chhastisgarh">chhastisgarh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+            </div>
+            <div class="popupbox">
+                <label for="state">Select the specialization</label>
+                <select name="state" id="state">
+                    <option value="Bihar">Bihar</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="chhastisgarh">chhastisgarh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+            </div>
+            <div class="popupbox">
+                <label for="state">Doctor's available for consultant</label>
+                <select name="state" id="state">
+                    <option value="Bihar">Bihar</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="chhastisgarh">chhastisgarh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+            </div>
+
+            <button> Request for Ambulance</button>
+
+        </div>
+    </div>
+
+    <div class="pgmcpopup">
+        <button class="close-btn">&times;</button>
+        <div class="pgmc-popup-headbox" style="background-color: #fff;">
+            <div class="pgmc-img-section">
+                <div class="starboi1">
+                    <h2>Patna Government <br>Medical College</h2>
+                    <p>Redefining the standards of modern healthcare through continuous innovation <br> and human
+                        connection.
+                    </p>
+                    <a href="#apmtform">
+                        <button>Book an Appointment</button>
+                    </a>
+                </div>
+                <div class="starboi2">
+                    <img src="doctor1.png" alt="Doctor's photo" style="width: 23vw;height: 55vh;padding-top: 4%;">
+                    <div class="trustrate">
+                        <h3>Trust Rate</h3>
+                        <h2>99.99%</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="pgmc-analysis">
+                <div class="pgmc-analysis1">
+                    <div class="amount-box1">
+                        <h3>Type-</h3>
+                        <p>Teaching Hospital</p>
+                    </div>
+                    <div class="amount-box2">
+                        <h3>Total Beds</h3>
+                        <p>500</p>
+                    </div>
+                    <div class="amount-box3">
+                        <h3>ICU Beds</h3>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="pgmc-analysis2">
+                    <div class="amount-box4">
+                        <h3>Emergency</h3>
+                        <p>Yes</p>
+                    </div>
+                    <div class="amount-box5">
+                        <h3>Ambulance Service</h3>
+                        <p>available</p>
+                    </div>
+                    <div class="amount-box6">
+                        <h3> Beds Available</h3>
+                        <p>20</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="pgmc-heading">Excellent Healthcare Services <br> are Served Here</h2>
+            <p class="pgmc-textline">From Consultation to recovery, we're here to support every <br> step of your health
+                journey. </p>
+
+            <div class="pgmc-department">
+                <h2>Our Departments</h2>
+                <div class="pgmc-department-box1">
+                    <div class="pgmc-department-box" style="background: #ffe5ec;">
+                        <h3>Orthopedics</h3>
+                        <p>20% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+
+                    </div>
+                    <div class="pgmc-department-box" style="background: #eaf2d7;">
+                        <h3>General Medicine</h3>
+                        <p>30% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #cdedfd;">
+                        <h3>Pediatrics</h3>
+                        <p>15% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                </div>
+                <div class="pgmc-department-box2">
+                    <div class="pgmc-department-box" style="background: #cdedfd;">
+                        <h3>Dermatology</h3>
+                        <p>10% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #eaf2d7;">
+                        <h3>Cardiology</h3>
+                        <p>11% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #ffe5ec;">
+                        <h3>Neurology</h3>
+                        <p>14% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                </div>
+
+                <div class="pgmc-department-icon">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <div class="pgmc-doctors">
+                <h2>Meet with Our Experienced doctors</h2>
+                <p class="remote">From Consultation to recovery, we're here to support every <br> step of your health
+                    journey.</p>
+                <div class="pgmc-doctors-box1">
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Anjali Verma</p>
+                        <h5>available</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 4.5</span>
+
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Rakesh Singh</p>
+                        <h5>On Leave</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Orthopedics</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarav Sharma</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Sneha Kapoor</p>
+                        <h5>On duty</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Orthopedics</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pgmc-doctors-box2">
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarav Kumar</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 2.5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Nikhil Sharma</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (07:00-15:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4.6</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarti Verma</p>
+                        <h5>Busy</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Dermatology</p>
+                            <p id="av3">Monday-Friday (12:00-07:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 3.9</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Raj Malhotra</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">General Medicine</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pgmc-appointment" id="apmtform">
+                <h2>Book your Appointment Now </h2>
+                <div class="appointment1">
+                    <div class="form1">
+                        <label for="Fname">First Name</label> <br>
+                        <input type="text" id="Fname" placeholder="First Name">
+                    </div>
+                    <div class="form1">
+                        <label for="Lname">Last Name</label> <br>
+                        <input type="text" id="Lname" placeholder="Last Name">
+                    </div>
+                    <div class="form1">
+                        <label for="Email">Email Address</label> <br>
+                        <input type="text" id="Email" placeholder="Your Email">
+                    </div>
+                    <div class="form1">
+                        <label for="Contact">Contact</label> <br>
+                        <input type="text" id="Contact" placeholder="Your Contact">
+                    </div>
+                    <div class="form1">
+                        <label for="Stype">Service Type</label> <br>
+                        <select id="Stype">
+                            <option value="General Medicine">General Medicine</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Neurology">Neurology</option>
+                        </select>
+                    </div>
+                    <div class="form1">
+                        <label for="D&T">Date & Time</label> <br>
+                        <input type="text" id="D&T" placeholder="dd/mm/yyyy">
+                    </div>
+                    <button>Book Appointment</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- muzaffapur civil hospital popup -->
+    <div class="mchpopup">
+        <button class="close-btn">&times;</button>
+        <div class="pgmc-popup-headbox" style="background-color: #fff;">
+            <div class="mch-img-section">
+                <div class="starboi1">
+                    <h2>Muzaffarpur Civil <br>Hospital</h2>
+                    <p>Redefining the standards of modern healthcare through continuous innovation <br> and human
+                        connection.
+                    </p>
+                    <a href="#apmtform1">
+                        <button>Book an Appointment</button>
+                    </a>
+                </div>
+                <div class="starboi2">
+                    <img src="doctor1.png" alt="Doctor's photo" style="width: 23vw;height: 55vh;padding-top: 4%;">
+                    <div class="trustrate">
+                        <h3>Trust Rate</h3>
+                        <h2>99.99%</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="pgmc-analysis">
+                <div class="pgmc-analysis1">
+                    <div class="amount-box1">
+                        <h3>Type-</h3>
+                        <p>Teaching Hospital</p>
+                    </div>
+                    <div class="amount-box2">
+                        <h3>Total Beds</h3>
+                        <p>500</p>
+                    </div>
+                    <div class="amount-box3">
+                        <h3>ICU Beds</h3>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="pgmc-analysis2">
+                    <div class="amount-box4">
+                        <h3>Emergency</h3>
+                        <p>Yes</p>
+                    </div>
+                    <div class="amount-box5">
+                        <h3>Ambulance Service</h3>
+                        <p>available</p>
+                    </div>
+                    <div class="amount-box6">
+                        <h3> Beds Available</h3>
+                        <p>20</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="pgmc-heading">Excellent Healthcare Services <br> are Served Here</h2>
+            <p class="pgmc-textline">From Consultation to recovery, we're here to support every <br> step of your health
+                journey. </p>
+
+            <div class="pgmc-department">
+                <h2>Our Departments</h2>
+                <div class="pgmc-department-box1">
+                    <div class="pgmc-department-box" style="background: #ffe5ec;">
+                        <h3>Orthopedics</h3>
+                        <p>20% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+
+                    </div>
+                    <div class="pgmc-department-box" style="background: #eaf2d7;">
+                        <h3>General Medicine</h3>
+                        <p>30% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #cdedfd;">
+                        <h3>Pediatrics</h3>
+                        <p>15% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                </div>
+                <div class="pgmc-department-box2">
+                    <div class="pgmc-department-box" style="background: #cdedfd;">
+                        <h3>Dermatology</h3>
+                        <p>10% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #eaf2d7;">
+                        <h3>Cardiology</h3>
+                        <p>11% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                    <div class="pgmc-department-box" style="background: #ffe5ec;">
+                        <h3>Neurology</h3>
+                        <p>14% of Total Patient</p>
+                        <p class="pgmc-textline1">From Consultation to recovery, we're here to support every <br> step
+                            of your health journey. </p>
+                    </div>
+                </div>
+
+                <div class="pgmc-department-icon">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <div class="pgmc-doctors">
+                <h2>Meet with Our Experienced doctors</h2>
+                <p class="remote">From Consultation to recovery, we're here to support every <br> step of your health
+                    journey.</p>
+                <div class="pgmc-doctors-box1">
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Anjali Verma</p>
+                        <h5>available</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 4.5</span>
+
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Rakesh Singh</p>
+                        <h5>On Leave</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Orthopedics</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarav Sharma</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Sneha Kapoor</p>
+                        <h5>On duty</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Orthopedics</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pgmc-doctors-box2">
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarav Kumar</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (08:00-16:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 2.5</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Nikhil Sharma</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Cardiology</p>
+                            <p id="av3">Monday-Friday (07:00-15:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4.6</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Aarti Verma</p>
+                        <h5>Busy</h5>
+                        <img src="doctor2.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">Dermatology</p>
+                            <p id="av3">Monday-Friday (12:00-07:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Junior level</span>
+                            <span id="av5">Rating: 3.9</span>
+                        </div>
+                    </div>
+                    <div class="pgmc-doctors-box">
+                        <p id="av1">Dr. Raj Malhotra</p>
+                        <h5>available</h5>
+                        <img src="doctor4.png" alt="" style="width: 15vw;">
+                        <div class="pgmc-doct-info">
+                            <p id="av2">General Medicine</p>
+                            <p id="av3">Monday-Friday (16:00-24:00)</p>
+                            <hr style="width: 80%; margin-left: 10%; margin-top: 3%;">
+                            <span id="av4">Senior level</span>
+                            <span id="av5">Rating: 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pgmc-appointment" id="apmtform1">
+                <h2>Book your Appointment Now </h2>
+                <div class="appointment1">
+                    <div class="form1">
+                        <label for="Fname">First Name</label> <br>
+                        <input type="text" id="Fname" placeholder="First Name">
+                    </div>
+                    <div class="form1">
+                        <label for="Lname">Last Name</label> <br>
+                        <input type="text" id="Lname" placeholder="Last Name">
+                    </div>
+                    <div class="form1">
+                        <label for="Email">Email Address</label> <br>
+                        <input type="text" id="Email" placeholder="Your Email">
+                    </div>
+                    <div class="form1">
+                        <label for="Contact">Contact</label> <br>
+                        <input type="text" id="Contact" placeholder="Your Contact">
+                    </div>
+                    <div class="form1">
+                        <label for="Stype">Service Type</label> <br>
+                        <select id="Stype">
+                            <option value="General Medicine">General Medicine</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Neurology">Neurology</option>
+                        </select>
+                    </div>
+                    <div class="form1">
+                        <label for="D&T">Date & Time</label> <br>
+                        <input type="text" id="D&T" placeholder="dd/mm/yyyy">
+                    </div>
+                    <button>Book Appointment</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- muzaffarpur civil hospital popup html ends -->
+
+
+
+    <!-- first aid blogs -->
+     <div class="first-aid-blog">
+        <h2 class="fab-heading">Health Blogs and First-aid Guides </h2>
+        <p class="fab-heading1"> <i class="fa-solid fa-triangle-exclamation"></i>Medical disclaimer !! "This guide is for informational purposes only and does not replace professional medical advice or certified first-aid training."</p>
+        <div class="fab-cont">
+            <div class="fab-cont1">
+                <p>Cardiac Arrest (CPR)</p>
+                <div class="fab-img">
+                <img src="cpr.jpg" alt=".">
+                </div>
+            </div>
+            <div class="fab-cont1">
+                <p>Choking (Heimlich Maneuver)</p>
+            </div>
+            <div class="fab-cont1">
+                <p>Severe Bleeding</p>
+            </div>
+            <div class="fab-cont1">
+                <p>Stroke (F.A.S.T. Test)</p>
+            </div>
+        </div>
+     </div>
+
+    <!-- doctor profile html -->
+    <div class="doctorsprofile">
+        <h2>Search for any Doctor</h2>
+        <p id="dp1">Get the information of your known doctors here and check the availaibility. </p>
+        <div class="doctorsearchbar">
+            <input class="input" placeholder="Search here" required="" type="text">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="dsb1">
+            <img src="doctor2.png" alt=""
+                style="width: 20.58vw; margin-left: 1.5%;margin-top: 1.25%;border-radius: 10px;">
+            <h3>Dr. Anjali Verma</h3>
+            <p id="dp8">Cardiology</p>
+            <p id="dp2">Address</p>
+            <p id="dp3">Patna Gov. Medical College Hospital</p>
+            <p id="dp5">Junior Doctor</p>
+            <p id="dp7">Rating: 4.5</p>
+            <P id="dp6">Timing- 08:00-16:00</P>
+            <p id="dp4">Available</p>
+        </div>
+    </div>
+    <!-- doctor profile html ends -->
+
+
+    <hr style="margin-top: 5%; width: 96vw; margin-left: 2%;">
+    <div class="hosp-reg">
+        <h2 class="loginheading">Register Your Hospital here. </h2>
+        <p class="logintagline">Make the user easy to find hospitals near them by registering yourself.</p>
+        <h1 class="logtag1"> Get Found. Get Booked. </h1>
+        <div class="reg-button" style="display: flex; justify-content: center; margin-top: 2%;">
+            <button class="regbtn"> <a href="http://127.0.0.1:3000/signup.html">Register here !!</a></button>
+        </div>
+    </div>
+
+    <hr style="margin-top: 5%; width: 96vw; margin-left: 2%;">
+
+    <div class="hosplogin">
+        <h2>Hospital Admin login</h2>
+        <p>Manage Appointments & Patient Flow</p>
+        <div class="reg-button1" style="display: flex; justify-content: center; margin-top: 0%;">
+            <button class="regbtn1"> Login here and Access Your Hospital Dashboard.</button>
+        </div>
+    </div>
+
+
+
+    <!-- why choose us -->
+     <div class="wcu">
+        <h2 class="wcu-text">Why Choose Us ?</h2>
+        <p class="wcu-text1">our mission is to drive progress and enhance the lives of our customers by <br> delivering superior facilities and services that exceed.  </p>
+        
+        <p class="wcuqsn" style="padding-top: 5%;">Q. Why should I use GHI-RAS instead of just searching on Google?</p>
+        <p class="wcuans">Search engines give you millions of links to read; we give you immediate action. Instead of scrolling through outdated <br> directories during an emergency, our platform instantly locates the nearest available ambulance, live hospital bed availability, <br> and verified doctors based on your exact GPS location. We cut the search time so you can get care faster.</p>
+        <br>
+        <p class="wcuqsn">Q. How does your platform help during a critical emergency?</p>
+        <p class="wcuans">Every second counts. We’ve built features specifically for high-stress situations, including a one-tap SOS button that shares <br> your location with emergency services, real-time tracking for the nearest ambulances, and offline-accessible first aid guides <br> so you know exactly what to do while help is on the way.</p>
+        <br>
+        <p class="wcuqsn">Q. Are the doctors and hospitals listed on your platform verified?</p>
+        <p class="wcuans" style="padding-bottom: 7%;">Absolutely. Your safety is our top priority. Every healthcare facility, pharmacy, and medical professional listed on our platform <br> goes through a strict verification process. We ensure you are only connected to licensed, highly-rated, and trustworthy medical <br> providers in your area.</p>
+     </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer1" style="width: 50%;">
+            <h3 class="footer-text"> <i class="fa-solid fa-stethoscope"></i> GHI-RAS</h3>
+            <p class="ft1">Kanpa Road Bihta <br> Patna-801106, Bihar <br> India </p>
+            <p class="ft2">Phone number</p>
+            <p class="ft3">1-100-001-1001</p>
+            <p class="ft4">Email</p>
+            <p class="ft5">support@ghiras.in</p> <br>
+            <p class="ft6"> <i class="fa-regular fa-copyright"></i> 2026 GHI-RAS. All rights reserved. </p>
+        </div>
+        <div class="footer2" style="width: 50%;">
+            <div class="footer3">
+                <p class="ft7">Quick Links</p>
+                <ul>
+                    <li style="margin-top: 6%;"><a href="#">Resources</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <p class="ft8">Legal</p>
+                <ul>
+                    <li style="margin-top: 6%;"><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.querySelector("#open-popup").addEventListener("click", function () {
+            document.body.classList.add("active-popup");
+        });
+
+        document.querySelector(".popup .close-btn").addEventListener("click", function () {
+            document.body.classList.remove("active-popup");
+        });
+
+
+        document.querySelector("#open-pgmcpopup").addEventListener("click", function () {
+            document.body.classList.add("active-pgmcpopup");
+        });
+
+        document.querySelector(".pgmcpopup .close-btn").addEventListener("click", function () {
+            document.body.classList.remove("active-pgmcpopup");
+        });
+
+        document.querySelector("#open-mchpopup").addEventListener("click", function () {
+            document.body.classList.add("active-mchpopup");
+        });
+
+        document.querySelector(".mchpopup .close-btn").addEventListener("click", function () {
+            document.body.classList.remove("active-mchpopup");
+        });
+
+
+
+    </script>
+</body>
+
+</html>
